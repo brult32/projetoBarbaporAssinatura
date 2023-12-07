@@ -126,7 +126,6 @@ no-repeat; */
 	cursor: pointer;
 }
 
-
 /* Column content container */
 .col-content {
 	padding: 15px;
@@ -241,6 +240,7 @@ no-repeat; */
 	border-radius: 15px;
 	text-align: right;
 	background-color: var(--lightcolor);
+	color: var(--darkcolor);
 	z-index: 1;
 }
 
@@ -297,6 +297,7 @@ of next to each other */
 		border-radius: 15px;
 		text-align: right;
 		background-color: var(--lightcolor);
+		color: var(--darkcolor);
 		z-index: 1;
 	}
 
