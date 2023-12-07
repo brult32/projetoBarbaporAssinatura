@@ -8,27 +8,28 @@ let mainTimer = 0,
 	reDot = 0,
 	defaultSize = 10;
 
-var Dot = function () {
-	this.x = mouse.x;
-	this.y = mouse.y;
-	this.size = defaultSize;
-	this.node = (function () {
-		var n = document.createElement("div");
-		n.className = "trail";
-		// n.style.height = defaultSize + 'px';
-		// n.style.width = defaultSize + 'px';
-		n.style.zIndex = 1;
-		document.body.appendChild(n);
-		return n;
-	}());
-};
+class Dot {
+	constructor() {
+		this.x = mouse.x;
+		this.y = mouse.y;
+		this.size = defaultSize;
+		this.node = (function () {
+			var n = document.createElement("div");
+			n.className = "trail";
+			// n.style.height = defaultSize + 'px';
+			// n.style.width = defaultSize + 'px';
+			n.style.zIndex = 1;
+			document.body.appendChild(n);
+			return n;
+		} ());
+	}
+	draw() {
+		this.node.style.left = this.x + "px";
+		this.node.style.top = this.y + "px";
+	}
+}
 
-Dot.prototype.draw = function () {
-	this.node.style.left = this.x + "px";
-	this.node.style.top = this.y + "px";
-};
-
-for (var i = 0; i < 12; i++) {
+for (var i = 0; i < 16; i++) {
 	var d = new Dot();
 	dots.push(d);
 }
