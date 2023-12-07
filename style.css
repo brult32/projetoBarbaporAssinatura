@@ -16,8 +16,17 @@ body {
 	margin: 0;
 	background: url("img/ori_3794295_wbxnksgrhzp3w8ho6wavzvwqry7htyqd7m4dyoty_white-vintage-paper-textures-1.jpg");
 	background-size: 100%;
-	background-repeat: repeat-y;
-	
+	background-repeat: repeat-y;	
+}
+
+.trail { /* className for the trail elements */
+    position: absolute;
+    /* height: 6px; width: 6px; */
+    border-radius: 3px;
+    background: var(--maincolor);
+}
+.infronttrail {
+	z-index: 10;
 }
 
 /* Style typography */
@@ -95,6 +104,28 @@ no-repeat; */
 	flex: 22%;
 	/* min-width: 360px; */
 }
+.left{
+	text-align: left;
+}
+
+.planheight{
+	min-height: 320px;
+}
+.buybtn{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	width: 100%;
+	height: 40px;
+	background-color: var(--maincolor);
+	color: var(--lightcolor);
+	border: none;
+}
+.buybtn:hover{
+	background-color: var(--secondarycolor);
+	color: var(--darkcolor);
+	cursor: pointer;
+}
+
 
 /* Column content container */
 .col-content {
@@ -237,6 +268,10 @@ of next to each other */
 
 	.navbar {
 		display: none;
+	}
+
+	.planheight{
+		min-height: 100px;
 	}
 	
 	.login-container-top{
