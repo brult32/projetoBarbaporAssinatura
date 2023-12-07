@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  canvas {
+    background: #eee;
+    display: block;
+    margin: 0 auto;
+  }
+  .baymaximg{
+    opacity: 0.2;
+    border: 10px;
+  }
