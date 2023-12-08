@@ -41,7 +41,7 @@ function draw() {
 	mainTimer++;
 	if (mainTimer <= defaultTimer) {
 		dots[reDot].x = mouse.x;
-		dots[reDot].y = mouse.y + 12;
+		dots[reDot].y = mouse.y + 4;
 		dots[reDot].size = defaultSize;
 		reDot++;
 		if(reDot >= dots.length){
