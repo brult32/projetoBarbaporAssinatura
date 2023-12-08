@@ -21,6 +21,7 @@ class Dot {
 			n.className = "trail";
 			// n.style.height = defaultSize + 'px';
 			// n.style.width = defaultSize + 'px';
+			n.style.borderRadius = '10px';
 			n.style.zIndex = 1;
 			document.body.appendChild(n);
 			return n;
@@ -39,7 +40,7 @@ for (var i = 0; i < 24; i++) {
 
 function draw() {
 	mainTimer++;
-	if (mainTimer <= defaultTimer) {
+	if (mainTimer >= defaultTimer) {
 		dots[reDot].x = mouse.x;
 		dots[reDot].y = mouse.y + 4;
 		dots[reDot].size = defaultSize;
